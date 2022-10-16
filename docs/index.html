@@ -22,9 +22,42 @@
     ></script>
     <link rel="icon" href="./assets/images/drink.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Pokedex</title>
+    <title>Your favorite cocktail-</title>
   </head>
   <body>
+    <header class="header">
+      <section class="search">
+        <img class="logo" src="./assets/images/logu.png" alt="" />
+        <form class="form_section">
+          <input
+            class="input js-cocktail-input"
+            type="text"
+            name="find"
+            placeholder="Mojito..."
+          />
+          <input class="search_button js-search-btn" type="button" value="Search" />
+
+          <input
+            class="search_button reset_button js-reset-btn"
+            type="reset"
+            value="Reset"
+          />
+        </form>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="section_list">
+        <article class="favs">
+          <ul class="favs_list js-favs-list"></ul>
+        </article>
+        <article class="results">
+          <ul class="results_list js-result-list"></ul>
+        </article>
+      </section>
+    </main>
+
+    
     <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>
