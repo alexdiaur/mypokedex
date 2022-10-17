@@ -1,9 +1,17 @@
 <header class="header">
-  <h1 class="header__title">Pokedex</h1>
+  <img class="header__image" src="./assets/images/logo.svg" />
   <form class="form">
-    <input class="form__search js_searchText" type="text" name="search" />
-    <button class="form__btn js_searchBtn">
+    <input
+      class="form__search js_searchInput"
+      type="text"
+      name="search"
+      placeholder="Pikachu"
+    />
+    <button class="search__btn js_searchBtn" type="submit">
       <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    <button class="reset__btn" id="js_resetBtn" type="reset">
+      <i class="fa-regular fa-circle-xmark"></i>
     </button>
   </form>
 </header>

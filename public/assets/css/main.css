@@ -336,4 +336,29 @@ button {
   outline: none;
   box-shadow: none; }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: rgba(223, 7, 7, 0.847);
+  padding-bottom: 30px; }
+
+.form {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .form__search {
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px; }
+  .form__btn {
+    padding: 7px;
+    color: yellow;
+    font-size: 20px;
+    cursor: pointer; }
+    .form__btn:active {
+      border: inset; }
+
 /*# sourceMappingURL=main.css.map */
