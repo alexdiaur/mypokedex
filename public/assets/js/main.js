@@ -27,7 +27,7 @@ function getPokemons(e) {
     .fetch(`${url}${searchInput.value.toLowerCase()}`)
     .then((response) => {
       if (response.status === 404) {
-        alert('Upps, try again');
+        alert('Oops you did it again');
       } else {
         return response.json();
       }

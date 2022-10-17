@@ -8,52 +8,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
     <script
       src="https://kit.fontawesome.com/016f8587a2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" href="./assets/images/drink.png" />
+    <link rel="icon" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Your favorite cocktail-</title>
+    <title>Pokemondex-</title>
   </head>
   <body>
     <header class="header">
-      <section class="search">
-        <img class="logo" src="./assets/images/logu.png" alt="" />
-        <form class="form_section">
-          <input
-            class="input js-cocktail-input"
-            type="text"
-            name="find"
-            placeholder="Mojito..."
-          />
-          <input class="search_button js-search-btn" type="button" value="Search" />
-
-          <input
-            class="search_button reset_button js-reset-btn"
-            type="reset"
-            value="Reset"
-          />
-        </form>
-      </section>
+      <img class="header__image" src="./assets/images/logo.svg" />
+      <form class="form">
+        <input
+          class="form__search js_searchInput"
+          type="text"
+          name="search"
+          placeholder="Pikachu"
+        />
+        <button class="search__btn js_searchBtn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="reset__btn" id="js_resetBtn" type="reset">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+      </form>
     </header>
 
     <main class="main">
-      <section class="section_list">
-        <article class="favs">
-          <ul class="favs_list js-favs-list"></ul>
-        </article>
-        <article class="results">
-          <ul class="results_list js-result-list"></ul>
-        </article>
+      <section class="errorMsg js_errorMsg hidden"></section>
+      <section class="listBox js_listBox">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--hideFavs js_showFavs">
+              <span class="itemContent">
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="itemContentText hidden">Show favorites</span>
+            </li>
+            <li class="menu__item menu__item--showSearches js_showSearches">
+              <span class="itemContent">
+                <i class="fa-solid fa-circle-dot js_favsIcon"></i>
+              </span>
+            </li>
+          </ul>
+        </nav>
+        <section class="favs js_favs hidden">
+          <h2 class="favs__title">Your favorites</h2>
+          <ul class="favs__list js_favsList"></ul>
+          <button class="resetFavs js_resetFavs">Delete</button>
+        </section>
+        <section class="search js_searchBox">
+          <h2 class="search__title js_searchTitle"></h2>
+          <ul class="search__list js_searchList"></ul>
+        </section>
       </section>
     </main>
 
