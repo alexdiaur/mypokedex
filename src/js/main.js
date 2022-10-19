@@ -6,5 +6,5 @@ const input = document.querySelector('.input__search');
 const pokemonImage = document.querySelector('.pokemon__image');
 const pokemonNumber = document.querySelector('.pokemon__number');
 const pokemonName = document.querySelector('.pokemon__name');
-const buttonPrev = document.querySelector('.btn-prev');
-const buttonNext = document.querySelector('.btn-next');
+const buttonPrev = document.querySelector('.btn-backward');
+const buttonNext = document.querySelector('.btn-forward');

@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: rgb(201, 20, 20);
+  padding-bottom: 20px;
+  border-bottom: solid black 5px;
 
   &__image {
     width: 50%;
@@ -17,24 +20,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   &__search {
     padding: 8px;
     text-align: left;
     border-radius: 5px;
-    border-color: rgb(67, 131, 226);
   }
 
   &__btn {
-    padding: 7px;
-
-    color: yellow;
-    font-size: 20px;
-
-    cursor: pointer;
-
-    &:active {
-      border: inset;
-    }
+    margin-top: 10px;
+    width: 50px;
+    padding: 5px;
   }
 }

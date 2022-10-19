@@ -12,7 +12,7 @@
       src="https://kit.fontawesome.com/016f8587a2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="icon" href="./assets/images/pikachufavicon.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Pokemondex-</title>
   </head>
@@ -27,19 +27,21 @@
           placeholder="Name or ID"
           required
         />
-        <button class="btn btn-backward">
-          <i class="fa-solid fa-backward"></i>
-        </button>
-        <button class="btn btn-nextward">
-          <i class="fa-solid fa-forward"></i>
-        </button>
+        <div class="form__div">
+          <button class="form__btn btn-backward">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="form__btn btn-nextward">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+        </div>
       </form>
     </header>
 
     <main class="main">
       <section class="errorMsg js_errorMsg hidden"></section>
       <section>
-        <img src="#" alt="pokemon image" class="pokemon__image" />
+        <!-- <img src="#" alt="pokemon image" class="pokemon__image" /> -->
         <h1 class="pokemon__data">
           <span class="pokemon__number"></span>
           <span class="pokemon__name"></span>
