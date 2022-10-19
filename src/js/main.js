@@ -25,7 +25,7 @@ const renderPokemon = async (pokemon) => {
   const data = await getPokemonFromApi(pokemon);
 
   if (data) {
-    pokemonImage.src = data.sprites.front_default;
+    pokemonImage.src = data.sprites.other.dream_world.front_default;
     input.value = '';
     searchPokemon = data.id;
   }
