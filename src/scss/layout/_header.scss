@@ -1,9 +1,13 @@
 .header {
+  align-items: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-items: center;
-  background-color: hsla(0, 94%, 45%, 0.847);
-  padding-bottom: 30px;
+
+  &__image {
+    width: 50%;
+    padding: 20px 0 10px 0;
+  }
 }
 
 .form {
@@ -16,8 +20,9 @@
 
   &__search {
     padding: 8px;
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
+    border-color: rgb(67, 131, 226);
   }
 
   &__btn {

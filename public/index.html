@@ -22,46 +22,28 @@
       <form class="form">
         <input
           class="form__search js_searchInput"
-          type="text"
+          type="search"
           name="search"
-          placeholder="Pikachu"
+          placeholder="Name or ID"
+          required
         />
-        <button class="search__btn js_searchBtn" type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <button class="btn btn-backward">
+          <i class="fa-solid fa-backward"></i>
         </button>
-        <button class="reset__btn" id="js_resetBtn" type="reset">
-          <i class="fa-regular fa-circle-xmark"></i>
+        <button class="btn btn-nextward">
+          <i class="fa-solid fa-forward"></i>
         </button>
       </form>
     </header>
 
     <main class="main">
       <section class="errorMsg js_errorMsg hidden"></section>
-      <section class="listBox js_listBox">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item menu__item--hideFavs js_showFavs">
-              <span class="itemContent">
-                <i class="fa-solid fa-star"></i>
-              </span>
-              <span class="itemContentText hidden">Show favorites</span>
-            </li>
-            <li class="menu__item menu__item--showSearches js_showSearches">
-              <span class="itemContent">
-                <i class="fa-solid fa-circle-dot js_favsIcon"></i>
-              </span>
-            </li>
-          </ul>
-        </nav>
-        <section class="favs js_favs hidden">
-          <h2 class="favs__title">Your favorites</h2>
-          <ul class="favs__list js_favsList"></ul>
-          <button class="resetFavs js_resetFavs">Delete</button>
-        </section>
-        <section class="search js_searchBox">
-          <h2 class="search__title js_searchTitle"></h2>
-          <ul class="search__list js_searchList"></ul>
-        </section>
+      <section>
+        <img src="#" alt="pokemon image" class="pokemon__image" />
+        <h1 class="pokemon__data">
+          <span class="pokemon__number"></span>
+          <span class="pokemon__name"></span>
+        </h1>
       </section>
     </main>
 

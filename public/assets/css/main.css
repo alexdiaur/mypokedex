@@ -337,11 +337,13 @@ button {
   box-shadow: none; }
 
 .header {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-items: center;
-  background-color: rgba(223, 7, 7, 0.847);
-  padding-bottom: 30px; }
+  justify-content: center;
+  flex-direction: column; }
+  .header__image {
+    width: 50%;
+    padding: 20px 0 10px 0; }
 
 .form {
   width: 100%;
@@ -351,8 +353,9 @@ button {
   align-items: center; }
   .form__search {
     padding: 8px;
-    text-align: center;
-    border-radius: 5px; }
+    text-align: left;
+    border-radius: 5px;
+    border-color: #4383e2; }
   .form__btn {
     padding: 7px;
     color: yellow;
