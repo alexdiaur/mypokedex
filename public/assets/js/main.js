@@ -1,6 +1,6 @@
 'use strict';
 
-let searchPokemon = [];
+let searchPokemon = 25;
 const url = `https://pokeapi.co/api/v2/pokemon/`;
 const form = document.querySelector('.form');
 const input = document.querySelector('.form__search');
@@ -19,7 +19,6 @@ const getPokemonFromApi = async (pokemon) => {
   } else {
     alert('¡Oppps try it again!');
   }
-  console.log(data);
 };
 
 const renderPokemon = async (pokemon) => {
@@ -31,9 +30,22 @@ const renderPokemon = async (pokemon) => {
     searchPokemon = data.id;
   }
 };
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   renderPokemon(input.value.toLowerCase());
+});
+
+btnBackward.addEventListener('click', () => {
+  if (searchPokemon > 1) {
+    searchPokemon -= 1;
+    renderPokemon(searchPokemon);
+  }
+});
+
+btnFordward.addEventListener('click', () => {
+  searchPokemon += 1;
+  renderPokemon(searchPokemon);
 });
 
 renderPokemon(searchPokemon);
