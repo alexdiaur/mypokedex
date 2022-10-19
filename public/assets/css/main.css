@@ -364,4 +364,8 @@ button {
     width: 50px;
     padding: 5px; }
 
+.pokemon__img {
+  margin: 10px auto;
+  display: block; }
+
 /*# sourceMappingURL=main.css.map */

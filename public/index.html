@@ -14,7 +14,7 @@
     ></script>
     <link rel="icon" href="./assets/images/pikachufavicon.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Pokemondex-</title>
+    <title>Pokédex</title>
   </head>
   <body>
     <header class="header">
@@ -25,13 +25,12 @@
           type="search"
           name="search"
           placeholder="Name or ID"
-          required
         />
         <div class="form__div">
           <button class="form__btn btn-backward">
             <i class="fa-solid fa-backward"></i>
           </button>
-          <button class="form__btn btn-nextward">
+          <button class="form__btn btn-forward">
             <i class="fa-solid fa-forward"></i>
           </button>
         </div>
@@ -40,8 +39,8 @@
 
     <main class="main">
       <section class="errorMsg js_errorMsg hidden"></section>
-      <section>
-        <!-- <img src="#" alt="pokemon image" class="pokemon__image" /> -->
+      <section class="box">
+        <img src="#" class="pokemon__img" alt="pokemon image" />
         <h1 class="pokemon__data">
           <span class="pokemon__number"></span>
           <span class="pokemon__name"></span>
